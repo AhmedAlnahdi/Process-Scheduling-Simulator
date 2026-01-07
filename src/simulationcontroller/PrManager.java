@@ -52,15 +52,7 @@ public class PrManager {
                 ? new SRoundRobinScheduler(readyQ, teamNumber)
                 : new DRoundRobinScheduler(readyQ);
     }
-
-    /*
-        Although the UML originally marked dispatch() as a private operation,
-        the simulator’s architecture requires external components to trigger
-        CPU dispatching each time unit. 
-
-        Because of this, dispatch() is intentionally made public so that
-        the controller or simulation loop can invoke it directly.
-     */
+    
     public void dispatch() {
 
         // 1) If nothing running -> pick one
