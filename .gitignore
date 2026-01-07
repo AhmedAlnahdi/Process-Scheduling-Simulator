@@ -1,0 +1,20 @@
+# Source - https://stackoverflow.com/a
+# Posted by mono68, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-01-07, License - CC BY-SA 3.0
+
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
