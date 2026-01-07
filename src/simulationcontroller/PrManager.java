@@ -7,8 +7,6 @@ public class PrManager {
     private long internalClock;
     
     public Queue readyQ;
-    // We didn't find a use for it, but kept it according to the UML
-    public Queue submitQ;
     
     public Queue holdQ1;
     
@@ -22,7 +20,7 @@ public class PrManager {
     
     private Scheduler scheduler;
     /*
-        Why we track runningProcess:
+        Why track runningProcess:
 
         The simulator advances one CPU time unit at a time. During that time,
         new processes may arrive and enter the readyQ. Without tracking whether a
