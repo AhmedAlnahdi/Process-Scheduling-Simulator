@@ -30,10 +30,10 @@ public class DRoundRobinScheduler extends Scheduler {
         }
 
         /*
-            We add +1 because in PrManager the running process is removed
+            I added +1 because in PrManager the running process is removed
             from the readyQ before getTimeQuant() is called.
             Therefore:
-                - readyQ.size() does NOT include the running process
+                - readyQ.size() does not include the running process
                 - but Globals.SR DOES include the running process
 
             So to correctly compute n (the number of processes), we must add +1
