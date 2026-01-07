@@ -7,7 +7,7 @@ import java.util.*;
 
 public class SimulationController {
 
-    // Per UML Attributes
+    
     private long currentTime;
     
     private File inputFile;
